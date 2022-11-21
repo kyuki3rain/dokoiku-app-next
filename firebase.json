@@ -1,16 +1,10 @@
 {
   "hosting": {
     "source": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   },
   "functions": {
     "runtime": "nodejs16",
-    "predeploy": [
-      "yarn --prefix \"$RESOURCE_DIR\" lint"
-    ]
+    "predeploy": ["yarn --prefix \"$RESOURCE_DIR\" lint"]
   }
 }
