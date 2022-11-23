@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
+import { Button } from "@mui/material";
 
-const Page: NextPage = () => {
-  return <div>home</div>;
+const Home: NextPage = () => {
+  return (
+    <>
+      <Button variant="contained">Hello World</Button>
+    </>
+  );
 };
 
-export default Page;
+export default Home;
