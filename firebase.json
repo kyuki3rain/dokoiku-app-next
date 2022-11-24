@@ -4,7 +4,6 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   },
   "functions": {
-    "runtime": "nodejs16",
-    "predeploy": ["yarn --prefix \"$RESOURCE_DIR\" lint"]
+    "runtime": "nodejs16"
   }
 }

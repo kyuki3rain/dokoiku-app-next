@@ -8,13 +8,14 @@
     "build": "next build",
     "start": "next start",
     "serve": "firebase serve",
+    "deploy": "firebase deploy --only hosting --project dokoiku-app --json",
     "lint": "run-p lint:*",
-    "lint:next": "next lint . --ignore-path .prettierignore --max-warnings 0",
     "lint:prettier": "prettier --check .",
+    "lint:next": "next lint . --ignore-path .prettierignore --max-warnings 0",
     "lint:typecheck": "tsc --pretty --noEmit",
     "format": "run-s format:eslint format:prettier",
-    "format:eslint": "yarn lint:next --fix",
-    "format:prettier": "yarn lint:prettier --write"
+    "format:prettier": "yarn lint:prettier --write",
+    "format:eslint": "yarn lint:next --fix"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -26,7 +27,7 @@
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "eslint": "8.28.0",
-    "eslint-config-next": "13.0.4",
+    "eslint-config-next": "^13.0.5",
     "firebase": "^9.14.0",
     "next": "13.0.4",
     "react": "18.2.0",
